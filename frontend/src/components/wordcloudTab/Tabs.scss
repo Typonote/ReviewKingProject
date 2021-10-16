@@ -1,0 +1,93 @@
+@import "../../styles/variable";
+@import url(//font.elice.io/EliceDigitalBaeum.css);
+
+.WordCloudcontainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    background: #f1f1f1;
+    margin: 0;
+    margin-top: 50px;
+    word-break: break-all;
+    box-shadow: 0 4px 18px rgb(11 33 74 / 10%), 0 -2px 4px rgb(11 33 74 / 3%);
+    @apply rounded-b-lg rounded-tl-lg rounded-tr-lg;
+}
+
+.bloc-tabs {
+    display: flex;
+    @apply rounded-tl-lg rounded-tr-lg;
+    box-shadow: rgb(0 0 0 / 5%) 0px 0px 24px 0px,
+        rgb(0 0 0 / 8%) 0px 0px 1px 0px;
+
+    :first-child {
+        @apply rounded-tl-lg;
+    }
+
+    :last-child {
+        @apply rounded-tr-lg;
+    }
+}
+
+.tabs {
+    padding: 15px;
+    text-align: center;
+    width: 50%;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: $docker-boldFont;
+    background: $main_white;
+    cursor: pointer;
+    box-sizing: content-box;
+    position: relative;
+    outline: none;
+    box-shadow: rgb(0 0 0 / 5%) 0px 0px 24px 0px,
+        rgb(0 0 0 / 8%) 0px 0px 1px 0px;
+}
+
+.active-tabs {
+    background: $docker-blue;
+}
+
+button {
+    border: none;
+}
+.content-tabs {
+    flex-grow: 1;
+
+    .no-wordcloud {
+        text-align: center;
+        @apply text-dblue text-xl mt-3 mb-20;
+    }
+}
+.content {
+    flex-direction: row;
+    background: white;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    @apply rounded-b-lg;
+
+}
+.content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $docker-boldFont;
+    text-align: center;
+    padding: 0px 0 5px 0px;
+}
+.content hr {
+    width: 100px;
+    height: 2px;
+    background: #222;
+    margin-bottom: 5px;
+}
+.content p {
+    width: 100%;
+    height: 100%;
+}
+.active-content {
+    display: block;
+}

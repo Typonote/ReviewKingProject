@@ -1,0 +1,5 @@
+@import "../../styles/variable";
+.ButtonWrapper {
+    // color: $main_white;
+    @apply m-auto p-4 text-3xl text-center justify-self-center bg-dblue-700 w-max rounded text-gray-50 outline-none cursor-pointer border-4 border-solid border-transparent transition duration-200 ease-in-out hover:bg-transparent hover:border-dblue hover:shadow-lg hover:font-bold;
+}

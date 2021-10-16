@@ -1,0 +1,24 @@
+@import "../../styles/variable";
+
+.ArrowContainer {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: rgba(113, 113, 113, 0.48);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
+
+    .ArrowIcon {
+        margin-top: 3px;
+        color: $main_white;
+        font-size: 29px;
+    }
+}
+
+.ArrowContainer:hover {
+    border: 2px solid $docker-deepblue;
+}

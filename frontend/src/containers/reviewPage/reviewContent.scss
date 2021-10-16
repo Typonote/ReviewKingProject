@@ -1,0 +1,67 @@
+@import "../../styles/variable";
+
+.ReviewContainer {
+  background-color: $docker-backgroundGray;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 1000px;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  flex-direction: column;
+
+  @media screen and (max-width: 550px) {
+    width: 95%;
+  }
+
+  .TitleText {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+    color: $docker-boldFont;
+    padding: 0.7rem 3rem;
+    background-image: linear-gradient(transparent 60%, $docker-blue 40%);
+    @apply sm:text-5xl;
+
+    @media screen and (max-width: 500px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .ReviewIntroContainer {
+    width: 100%;
+    min-height: 600px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.1rem;
+    color: $docker-boldFont;
+    font-weight: 700;
+    line-height: 1.4;
+
+    .topText {
+      margin: 1rem 0;
+
+      @media screen and (max-width: 500px) {
+        font-size: 1.2em;
+      }
+    }
+
+    .downText {
+      margin: 1rem 0;
+
+      @media screen and (max-width: 500px) {
+        font-size: 1.6em;
+      }
+    }
+  }
+}
+
+#map {
+  box-shadow: 0 4px 18px rgb(11 33 74 / 10%), 0 -2px 4px rgb(11 33 74 / 3%);
+  @apply w-full max-w-screen-xl border-none;
+}

@@ -1,0 +1,149 @@
+@import "../../styles/variable";
+@import url(//font.elice.io/EliceDigitalBaeum.css);
+
+.IntroduceContainer {
+    background-color: $docker-backgroundGray;
+    width: 80%;
+    max-width: 1600px;
+    line-height: 1.4;
+    margin: 0 auto;
+    min-height: 1400px;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    flex-direction: column;
+
+    @media screen and (max-width: 550px) {
+        width: 90%;
+    }
+
+    .ServiceIntroContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        margin-bottom: 20px;
+
+        .Intro {
+            font-size: 2.2rem;
+            color: $docker-boldFont;
+            font-weight: 700;
+        }
+
+        .subIntro {
+            color: $docker-lightFont;
+            font-size: 1rem;
+        }
+    }
+
+    // 소개 이미지 공간
+
+    .IntroduceImage {
+        @apply border-b-2 border-dblue-700 border-solid;
+        width: 750px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 1.5rem;
+        @apply mt-4 mb-4;
+
+        @media screen and (max-width: 700px) {
+            width: 100%;
+            height: 360px;
+            padding: 0rem;
+        }
+
+        .IntroImage {
+            width: 50%;
+            src: url(../../assets/pictures/introduceImage.PNG);
+
+            @media screen and (max-width: 500px) {
+                width: 80%;
+            }
+        }
+    }
+
+    // 부연 설명
+
+    .SubIntroConatiner {
+        display: flex;
+        flex-direction: column;
+        width: 750px;
+        text-align: left;
+
+        @media screen and (max-width: 550px) {
+            width: 95%;
+        }
+
+        .Intro {
+            font-size: 1.5rem;
+            color: $docker-boldFont;
+            font-weight: 700;
+        }
+
+        .subIntro {
+            color: $docker-lightFont;
+            font-size: 1rem;
+        }
+    }
+
+    // 팀원 소개 부분
+
+    .TitleText {
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin-bottom: 40px;
+        text-align: center;
+        color: $docker-boldFont;
+        padding: 0.7rem 3rem;
+        background-image: linear-gradient(transparent 60%, #f8cd07 40%);
+        @apply sm:text-5xl;
+    }
+
+    .PeopleIntroContainer {
+        width: 100%;
+        min-height: 350px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+
+        .CardContainer {
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            padding: 1rem;
+
+            @media screen and (max-width: 400px) {
+                width: 120px;
+            }
+            .CardIcon {
+                width: 8rem;
+                height: 8rem;
+            }
+            .PeopleText {
+                color: rgb(0, 44, 102);
+                font-size: 1.6rem;
+                font-weight: 700;
+                margin: 0.25rem 1rem 0 1rem;
+                line-height: 1.4;
+                text-align: center;
+                @apply sm:mt-1 m-0;
+            }
+
+            .PeopleRoleText {
+                color: rgb(0, 44, 102);
+                font-size: 0.8rem;
+                font-weight: 200;
+                @apply sm:mt-1 m-0;
+            }
+        }
+    }
+}

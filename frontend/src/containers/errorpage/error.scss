@@ -1,0 +1,39 @@
+@import "../../styles/variable";
+
+.ErrorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.errorText {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.errorImage {
+  width: 30%;
+}
+
+a.button-home .goTohome {
+  background-color: $main_red;
+  font-size: 1.4rem;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  display: block;
+  border: 3px solid $main_red;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s linear all;
+  @apply mt-10;
+}
+
+a.button-home .goTohome:hover {
+  background-color: darken($color: $main_red, $amount: 10%);
+  border: 3px solid darken($color: $main_red, $amount: 10%);
+  box-shadow: 0 0 8px 0 $main_red;
+}
