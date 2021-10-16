@@ -1,5 +1,6 @@
 # 리뷰왕
 - 각 플랫폼별 차이점을 파악하고, 플랫폼별 리뷰를 바탕으로 더 나은 선택을 하는데 도움을 주고자 함.
+- gitlab 주소: https://kdt-gitlab.elice.io/002-part3-deliveryservice/team7/sample-project
 
 
 ## 프로젝트 구성 안내
@@ -71,8 +72,12 @@
 - 개발 단계: 웹 서버 사용자가 직접 백엔드에 저장할수 있는 기능 구현, 데이터 베이스 구축 및 API 활용, 데이터 분석 개념 총동원하기
 - 수정 단계: 코치님 피드백 반영해서 분석/ 시각화 방식 수정
 
-## 6. 버전
-  - 프로젝트의 버전 기입
 
-## 7. FAQ
-  - 자주 받는 질문 정리
+## 6. 📄 예시
+
+![Hnet-image](https://user-images.githubusercontent.com/81430564/137592795-5d7ff068-d963-4812-bb65-77bbfebe574c.gif)
+
+
+![Hnet-image (2)](https://user-images.githubusercontent.com/81430564/137593017-97fd1229-3924-4882-b62e-bd79c75a9096.gif)
+
+
